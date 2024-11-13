@@ -8,13 +8,12 @@ Write a program that tests if a value is even or odd. Follow the instructions ou
 * The message returned by the function should be printed from within the main function.
 """
 
-num = input()
-if num % 2:
-    print(f"{num} is even")
-else:
-    print(f"{num} is even")
 
-diction = {
-    1:31,
-    2:28
-}
+def even():
+    x = input("Is this num odd/even?:")
+    if int(x) & 1: # Divisable by 2?
+        print(f"{x} is NOT even.")
+    else:
+        print(f"{x} is even.")
+
+even()
